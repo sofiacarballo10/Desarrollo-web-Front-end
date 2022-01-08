@@ -1,0 +1,66 @@
+/* @media (max-width: 1200px){
+    .barra-form{
+        padding: 0 15rem;
+    border: none;
+}
+    } */
+    @media (min-width: 768px){
+    .barra-form{
+        padding: 0 5rem;
+        border: none;
+        margin: 10px 200px;
+        }
+    }
+    @media (max-width: 1200px){
+        .contenido-iconos{
+            margin-right: 2rem;
+            height: 40px;
+            width: 120px;
+            position: relative;
+            
+        }
+    }
+
+
+@media (max-width: 1200px){
+    .contenedor_ofertas{
+        width: 100%;
+        position: relative;
+        padding: 22px;
+        justify-content: center;
+        background-color: pink;
+        border: 2px solid #E2E3E8;
+    }
+    .card-img-top{
+        margin: 0 auto;
+    }
+
+    }
+
+    @media (max-width: 1200px){
+        .contact-form input, .contact-form textarea {
+          width: 100%;
+          background-color: #fff;
+          padding: 0 3px;
+          border: 1px solid #dedede4f;
+          color: #222;
+          font-size: 16px; 
+        }
+      
+        }
+    @media (max-width: 1200px){  
+        .mt-45 {
+            margin: 5px 5px 
+        }
+    }
+
+    @media (max-width: 1200px){
+        .contenedor-form{
+            position: relative;
+            width: 100%;
+            background-color:rgb(255, 255, 255,.5); ;
+            border: 2px solid #E2E3E8;
+            margin-top: 0px;
+                    
+            } 
+    }

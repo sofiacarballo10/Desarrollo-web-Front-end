@@ -1,0 +1,24 @@
+{
+    "menu": [
+        {   "id": 1,
+            "seccion": "INICIO"
+            
+            
+        },
+        {   "id": 2,
+            "seccion": "TIENDAS"
+            
+
+        },
+        {   "id": 3,
+            "seccion": "CONOCENOS"
+           
+
+        },
+        {   "id": 4,
+            "seccion": "CONTACTANOS"
+     
+
+        }
+    ]
+}
