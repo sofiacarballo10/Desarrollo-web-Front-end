@@ -192,7 +192,7 @@ img {
     .contenedor_ofertas {
         width: 100%;
         position: relative;
-        padding: 75px 20px;
+        padding: 53px 20px;
         justify-content: center;
         background-color: var(--secundario);
         border: 2px solid var(--secundario);
