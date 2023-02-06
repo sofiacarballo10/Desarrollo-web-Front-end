@@ -2,416 +2,408 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preload" href="CSS/normalize.css" as="style">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family = Krub: wght @ 400; 700 & display = swap " rel=" stylesheet ">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">  
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <link rel="preload" href="CSS/style.css" as=style>
-    <link href="CSS/style.css" rel="stylesheet">
-    <link rel="preload" href="CSS/stylemobile.css" as=style>
-    <link href="CSS/stylemobile.css" rel="stylesheet">
-    <link rel="preload" href="CSS/stylemidle.css" as=style>
-    <link href="CSS/stylemidle.css" rel="stylesheet">
+  <link rel="preload" href="CSS/style.css" as=style>
+  <link href="CSS/style.css" rel="stylesheet">
+  <link rel="preload" href="CSS/stylemobile.css" as=style>
+  <link href="CSS/stylemobile.css" rel="stylesheet">
+  <link rel="preload" href="CSS/stylemidle.css" as=style>
+  <link href="CSS/stylemidle.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- START BARRA DE NAVEGACIÓN -->
-    <nav class="navbar navbar-default navbar-barras hidden-lg hidden-md" role="navigation">
-        <ul class="nav navbar-nav navbar-form">
-            <form class="barra-form" role="search">
-                <div class="form-group ">
-                    <input type="text" class=" form-control" placeholder="Buscar">
-                </div>
+  <!-- NAVEGATION BAR -->
+  <nav class="navbar navbar-default navbar-bars hidden-lg hidden-md" role="navigation">
+    <ul class="nav navbar-nav navbar-form">
+      <form class="bar-form" role="search">
+        <div class="form-group ">
+          <input type="text" class=" form-control" placeholder="Look for">
+        </div>
+      </form>
+    </ul>
+  </nav>
+  <div class="container-bar">
+    <nav class="navbar navbar-default" role="navigation">
+      <button type="button" class="container-button navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Display navegation bar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logotipo</a>
+      <div class="collapse navbar-collapse navbar-ex1-collapse" style=" background-color: #A34949">
+        <!-- DYNAMIC CONTENT -->
+        <div id="enlaces"></div>
+        <div class="hidden-xs hidden-sm" role="navigation">
+          <ul class="nav navbar-nav navbar-form">
+            <form class="navbar-form" role="search">
+              <div class="form-group ">
+                <input type="text" class=" form-control" placeholder="LOOK FOR">
+              </div>
             </form>
-        </ul>
+          </ul>
+        </div>
+        <div class="hidden-lg hidden-md">
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </div>
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="28" height="28"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+          </div>
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="6" cy="19" r="2" />
+              <circle cx="17" cy="19" r="2" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+          </div>
+        </div>
+        <div class="container-icons hidden-sm hidden-xs">
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+              <path
+                d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+            </svg>
+          </div>
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="28" height="28"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+            </svg>
+          </div>
+          <div class="icons">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="6" cy="19" r="2" />
+              <circle cx="17" cy="19" r="2" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </nav>
-    <div class="contenedor-barra">
-        <nav class="navbar navbar-default" role="navigation">
-            <button type="button" class="contenedor-button navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Desplegar navegación</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-            <a class="navbar-brand" href="#">Logotipo</a>
-            <div class="collapse navbar-collapse navbar-ex1-collapse" style=" background-color: #A34949">
-
-                <!-- ACA VA EL CONTENIDO DINAMICO -->
-                <div id="enlaces"></div>
-                <div class="hidden-xs hidden-sm" role="navigation">
-                    <ul class="nav navbar-nav navbar-form">
-                        <form class="navbar-form" role="search">
-                            <div class="form-group ">
-                                <input type="text" class=" form-control" placeholder="Buscar">
-                            </div>
-                        </form>
-                    </ul>
-                </div>
-                <div class="hidden-lg hidden-md">
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                                <path
-                                    d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                            </svg>
-                    </div>
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                            </svg>
-                    </div>
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <circle cx="6" cy="19" r="2" />
-                                <circle cx="17" cy="19" r="2" />
-                                <path d="M17 17h-11v-14h-2" />
-                                <path d="M6 5l14 1l-1 7h-13" />
-                            </svg>
-                    </div>
-                </div>
-                <div class="contenido-iconos hidden-sm hidden-xs">
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                                    <path
-                                        d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                                </svg>
-                    </div>
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                    <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-                                </svg>
-                    </div>
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F0BCBC" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <circle cx="6" cy="19" r="2" />
-                                    <circle cx="17" cy="19" r="2" />
-                                    <path d="M17 17h-11v-14h-2" />
-                                    <path d="M6 5l14 1l-1 7h-13" />
-                                </svg>
-                    </div>
-                </div>
-            </div>
-        </nav>
+  </div>
+  <!-- END NAVEGATION BAR -->
+  <!-- START HEADER -->
+  <header>
+    <div class="content-front">
+      <img src="img/portada.jpg" class="img-front img-responsive" alt="Responsive image">
     </div>
-    <!-- END BARRA DE NAVEGACIÓN -->
-
-    <!-- START HEADER -->
-    <header>
-        <div class="contenido-portada">
-            <img src="img/portada.jpg" class="img-portada img-responsive" alt="Responsive image">
+    <!-- <h3 class="text-center">FEATURED BRANDS</h3> -->
+  </header>
+  <!-- END HEADER -->
+  <!-- START FEATURED BRANDS -->
+  <!-- <div class="container container-brands"> -->
+    <!-- fila 1 -->
+    <!-- definimos margenes fijos -->
+    <!-- <div class=" col-lg-1 col-md-1"></div>
+    <div class=" col-lg-1 col-md-1 "></div> -->
+    <!-- aca se cargan las imagees dinamicamente -->
+    <!-- <div id="brands">
+      <div></div>
+    </div>
+    <div class=" col-lg-1 col-md-1"></div>
+    <div class=" col-lg-1 col-md-1"></div>
+  </div> -->
+  <!-- END FEATURED BRANDS -->
+  <!-- START VER TODAS LAS brands -->
+  <div class="container text-center ">
+    <button type="button" class="button-style">See all Brands ></button>
+  </div>
+  <hr size="10" width="25%" />
+  <h4 class="text-center">¿WHAT ARE YOU LOOKING FOR?</h4>
+  <div class="container text-center container-seeBrands">
+    <div row>
+      <div class="col-md-1"></div>
+      <!-- dynamics buttons -->
+      <div id="articles"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="spacing">
+  </div>
+  <!-- END VER TODAS LAS brands -->
+  <!-- START products -->
+  <div class="container content">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div>
+          <div class="">
+            <img src="img/producto1.png" class="img-thumbnail img-responsive" alt="...">
+            <div class="card-body">
+              <h5 class="title">Eyes</h5>
+              <button type="button" class="btn button-style btn-secondary">See category</button>
+            </div>
+          </div>
         </div>
-        <h3 class="text-center">MARCAS DESTACADAS</h3>
-    </header>
-    <!-- END HEADER -->
-    <!-- START MARCAS DESTACADAS -->
-    <div class="container contenedor-marcas">
-        <!-- fila 1 -->
-
-        <!-- definimos margenes fijos -->
-        <div class=" col-lg-1 col-md-1"></div>
-        <div class=" col-lg-1 col-md-1 "></div>
-
-        <!-- aca se cargan las imagenes dinamicamente -->
-
-        <div id="marcas">
-            <div></div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <div class="">
+            <img src="img/producto2.jpg" class="img-thumbnail img-responsive" alt="...">
+            <div class="">
+              <h5 class="">Face</h5>
+              <button type="button" class="button-style btn btn-secondary">See category</button>
+            </div>
+          </div>
         </div>
-        <div class=" col-lg-1 col-md-1"></div>
-        <div class=" col-lg-1 col-md-1"></div>
-
-
-    </div>
-    <!-- END MARCAS DESTACADAS -->
-    <!-- START VER TODAS LAS MARCAS -->
-
-    <div class="container text-center ">
-        <button type="button" class="button-style btn-default">Ver todas las marcas ></button>
-    </div>
-    <hr size="10" width="25%" />
-    <h4 class="text-center">¿QUÉ ESTÁS BUSCANDO?</h4>
-
-    <div class="container text-center contenedor-verMarcas">
-        <div row>
-            <div class="col-md-1"></div>
-
-            <!-- aca se cargan los botones dinamicamente -->
-
-            <div id="articulos"></div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <div class="">
+            <img src="img/producto3.png" class="img-thumbnail img-responsive" alt="...">
+            <div class="">
+              <h5 class="">Lips</h5>
+              <button type="button" class="button-style btn btn-secondary">See category</button>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
-    </div>
-    <div class="espaciado">
-    </div>
-    <!-- END VER TODAS LAS MARCAS -->
-
-    <!-- START PRODUCTOS -->
-
-    <div class="container contenido">
-        <div class="row text-center">
-            <div class="col-md-3">
-                <div>
-                    <div class="">
-                        <img src="img/producto1.png" class="img-thumbnail img-responsive" alt="...">
-                        <div class="card-body">
-                            <h5 class="title">Eyes</h5>
-                            <button type="button" class="btn button-style btn-secondary">Ver</button>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <div class="">
+            <img src="img/producto4.jpg" class="img-thumbnail img-responsive" alt="...">
+            <div class="">
+              <h5 class="">Nails</h5>
+              <button type="button" class="button-style btn btn-secondary">See category</button>
             </div>
-
-            <div class="col-md-3">
-                <div>
-                    <div class="">
-                        <img src="img/producto2.jpg" class="img-thumbnail img-responsive" alt="...">
-                        <div class="">
-                            <h5 class="">Face</h5>
-                            <button type="button" class="button-style btn btn-secondary">Ver</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div>
-                    <div class="">
-                        <img src="img/producto3.png" class="img-thumbnail img-responsive" alt="...">
-                        <div class="">
-                            <h5 class="">Lips</h5>
-                            <button type="button" class="button-style btn btn-secondary">Ver</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div>
-                    <div class="">
-                        <img src="img/producto4.jpg" class="img-thumbnail img-responsive" alt="...">
-                        <div class="">
-                            <h5 class="">Nails</h5>
-                            <button type="button" class="button-style btn btn-secondary">Ver</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- END PRODUCTOS -->
-    <!-- START NOSOTROS -->
-    <div class="container contenido_nosotros">
+  </div>
+  <!-- END products -->
+  <!-- START us -->
+  <div class="container content_us">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/maquillaje.png" class="img-lancome img-responsive img-us" alt="...">
+      </div>
+      <div class="col-md-6">
+        <img src="img/maquillaje.png" class="img-responsive" alt="...">
+      </div>
+    </div>
+  </div>
+  <!-- END us -->
+  <!-- START purchases -->
+  <div class="container content_us">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="new-style">
+          <img src="img/bases.png" class="image_us" alt="...">
+        </div>
+      </div>
+      <div class="col-md-6 text-center ">
+        <h1 class="purchases-title">10% OFF ONLINE</h1>
+        <button type="button" class="button-style btn-default">SEE ALL DISCOUNTS</button>
+      </div>
+    </div>
+  </div>
+  <!-- END purchases -->
+  <!--START HOW TO BUY -->
+  <div class="content-front">
+    <img src="img/labios.png" class="hidden-sm hidden-xs img-thumbnail img-responsive image_us" alt="" />
+    <img src="img/labios.png" class="hidden-lg hidden-md img-thumbnail img-responsive" alt="" />
+    <img src="img/labios.png" class="hidden-lg hidden-md img-thumbnail img-responsive" alt="" />
+  </div>
+  <!-- END HOW TO BUY -->
+  <!-- START OFFERS-->
+  <div class="container content">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="new-style">
+          <div class="card  ">
+            <img src="img/labial.png" class="card-img-top image " alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="content_offers">
+          <div class="card">
+            <h2 class="card-title">DISCOUNTS</h2><span>OF THE WEEK</span>
+            <div class="card-body">
+              <button type="button" class="btn btn-block btn-wrap-text">CLINIQUE</button>
+              <button type="button" class="btn btn-block btn-wrap-text">LANCOME</button>
+              <button type="button" class="btn btn-block btn-wrap-text">L'OREAL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="new-style">
+          <div class="card">
+            <img src="img/labial.png" class="card-img-top image" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="new-style">
+          <div class="card">
+            <img src="img/labial.png" class="card-img-top image" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END OFFERS -->
+  <!-- START PRODUCTS -->
+  <div class="container content">
+    <div class="row text-center">
+      <div class="col-md-1"></div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="card ">
+          <img src="img/lancome3.jpg" class="image-products" alt="...">
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="card">
+          <img src="img/Screenshot_7.png" class="image-products" alt="...">
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="card">
+          <img src="img/esteelauder.jpg" class="image-products" alt="...">
+        </div>
+      </div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="card">
+          <img src="img/loreal1.jpg" class="image-products" alt="...">
+        </div>
+      </div>
+      <div class="col-sm-3 col-xs-3"></div>
+      <div class="col-md-2 col-sm-6 col-xs-6">
+        <div class="card">
+          <img src="img/loreal.jpg" class="image-products" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END PRODUCTS -->
+  <!-- START FORM -->
+  <div class="container-form">
+    <div class="container-form">
+      <legend class="text-center">CONTACT US</legend>
+      <form action="" class="form" id="form" type="submit" action="assets/contact.php" method="post">
         <div class="row">
-            <div class="col-md-6">
-                <img src="img/maquillaje.png" class="img-lancome img-responsive img-nosotros" alt="...">
+          <!-- group name -->
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class=" contact-form form__group" id="group__name">
+              <label for="name" class="form__label">First name*</label>
+              <div class="form__group-input">
+                <input type="text" class="form__input" name="name" id="name" placeholder="Name">
+              </div>
+              <p class="form__input-wrong">The name can only contain letters.</p>
             </div>
-            <div class="col-md-6">
-                <img src="img/maquillaje.png" class="img-responsive" alt="...">
+            <!-- contact-form -->
+          </div>
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="contact-form form__group" id="group__surname">
+              <label for="name" class="form__label">Last name*</label>
+              <div class="form__group-input">
+                <input type="text" class="form__input" name="lastName" id="lastName" placeholder="last name">
+              </div>
+              <p class="form__input-wrong">The last name can only contain letters.</p>
             </div>
+          </div>
+          <!-- contact-form -->
         </div>
-    </div>
-    <!-- END NOSOTROS -->
-    <!-- START COMPRAS -->
-    <div class="container contenido_nosotros">
+        <!-- group email -->
         <div class="row">
-            <div class="col-md-6">
-                <div class="nuevo-estilo">
-                    <img src="img/bases.png" class="imagen_nosotros" alt="...">
-                </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="contact-form mt-45 form__group" id="group__mail">
+              <label for="mail" class="form__label">Email address*</label>
+              <div class="form__group-input">
+                <input type="email" class="form__input" name="email" id="email" placeholder="e.g.example@domain.com">
+              </div>
+              <p class="form__input-wrong">The mail can only contain letters, numbers, periods, dashes and hyphen
+                under.</p>
             </div>
-            <div class="col-md-6 text-center ">
-                <h1 class="compras-titulo">-10% EN COMPRAS ONLINE</h1>
-                <button type="button" class="button-style btn-default">IR A LA TIENDA</button>
+            <!-- contact-form -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="form__group contact-form mt-45" id="group__phone">
+              <label for="phone" class="form__label">Phone number</label>
+              <div class="form__group-input">
+                <input type="text" class="form__input" name="phone" id="phone" placeholder="phone">
+              </div>
+              <p class="form__input-wrong">The phone can only contain numbers and the maximum is 14 digits.</p>
             </div>
+            <!-- contact-form -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="contact-form mt-45">
+              <label>Message</label>
+              <textarea id="message" name="message" placeholder="Enter your query here"></textarea>
+            </div>
+            <!-- contact-form -->
+          </div>
+          <p class="form-message"></p>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="contact-form mt-45 pull-right">
+              <button id="send" type="submit" class="button-style main-btn">SEND</button>
+            </div>
+            <!-- contact-form -->
+          </div>
         </div>
     </div>
-    <!-- END COMPRAS -->
-    <!--START COMO COMPRAR -->
-    <div class="contenido-portada">
-        <img src="img/labios.png" class="hidden-sm hidden-xs img-thumbnail img-responsive imagen_nosotros" alt="" />
-        <img src="img/labios.png" class="hidden-lg hidden-md img-thumbnail img-responsive" alt="" />
-        <img src="img/labios.png" class="hidden-lg hidden-md img-thumbnail img-responsive" alt="" />
-    </div>
-
-    <!-- END COMO COMPRAR -->
-    <!-- START OFERTAS PRODUCTOS -->
-
-    <div class="container contenido">
-        <div class="row text-center">
-            <div class="col-md-3">
-                <div class="nuevo-estilo">
-                    <div class="card  ">
-                        <img src="img/labial.png" class="card-img-top imagen " alt="...">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="contenedor_ofertas">
-                    <div class="card">
-                        <h1 class="card-title">OFERTAS</h1><span>DE LA SEMANA</span>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-primary btn-block btn-wrap-text">CLINIQUE</button>
-                            <button type="button" class="btn btn-primary btn-block btn-wrap-text">LANCOME</button>
-                            <button type="button" class="btn btn-primary btn-block btn-wrap-text">L'OREAL</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="nuevo-estilo">
-                    <div class="card">
-                        <img src="img/labial.png" class="card-img-top imagen" alt="...">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="nuevo-estilo">
-                    <div class="card">
-                        <img src="img/labial.png" class="card-img-top imagen" alt="...">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END OFERTAS PRODUCTOS -->
-    <!-- START PRODUCTOS -->
-
-    <div class="container contenido">
-        <div class="row text-center">
-            <div class="col-md-1"></div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="card ">
-                    <img src="img/lancome3.jpg" class="imagen-productos" alt="...">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="card">
-                    <img src="img/Screenshot_7.png" class="imagen-productos" alt="...">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="card">
-                    <img src="img/esteelauder.jpg" class="imagen-productos" alt="...">
-                </div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="card">
-                    <img src="img/loreal1.jpg" class="imagen-productos" alt="...">
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-3"></div>
-            <div class="col-md-2 col-sm-6 col-xs-6">
-                <div class="card">
-                    <img src="img/loreal.jpg" class="imagen-productos" alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END PRODUCTOS -->
-    <!-- START FORM -->
-    <div class="contenedor-formulario">
-        <div class="contenedor-form">
-            <legend class="text-center">CONTACTANOS</legend>
-            <form action="" class="formulario" id="formulario" type="submit" action="assets/contact.php" method="post">
-                <div class="row">
-                    <!-- Grupo Nombre -->
-                    <div class="col-md-6 col-sm-6 col-lg-6">
-                        <div class=" contact-form formulario__grupo" id="grupo__nombre">
-                            <label for="nombre" class="formulario__label">Nombre</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
-                            </div>
-                            <p class="formulario__input-error">El nombre solo puede contener letras.</p>
-                        </div>
-                        <!-- contact-form -->
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6">
-                        <div class="contact-form formulario__grupo" id="grupo__apellido">
-                            <label for="nombre" class="formulario__label">Apellido</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
-                            </div>
-                            <p class="formulario__input-error">El apellido solo puede contener letras.</p>
-                        </div>
-                    </div>
-                    <!-- contact-form -->
-                </div>
-                <!-- Grupo email -->
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="contact-form mt-45 formulario__grupo" id="grupo__correo">
-                            <label for="correo" class="formulario__label">Email</label>
-                            <div class="formulario__grupo-input">
-                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
-                            </div>
-                            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
-                        </div>
-                        <!-- contact-form -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="formulario__grupo contact-form mt-45" id="grupo__telefono">
-                            <label for="telefono" class="formulario__label">Teléfono</label>
-                            <div class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Número">
-                            </div>
-                            <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
-                        </div>
-                        <!-- contact-form -->
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="contact-form mt-45">
-                            <label>Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" placeholder="texto"></textarea>
-                        </div>
-                        <!-- contact-form -->
-                    </div>
-                    <p class="form-message"></p>
-                </div>
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <div class="contact-form mt-45 pull-right">
-                            <button id="enviar" type="submit" class="button-style main-btn">ENVIAR</button>
-                        </div>
-                        <!-- contact-form -->
-                    </div>
-                </div>
-        </div>
-        <!-- row -->
-        </form>
-        <!-- END FORM -->
-        <script src="./src/app.js"></script>
+    <!-- row -->
+    </form>
+    <!-- END FORM -->
+    <script src="./src/app.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,20 @@
+{
+    "articles": [
+        {   "id": 1,
+            "name": "MAKE UP"
+        },
+        {   "id": 2,
+            "name": "FRAGANCES"
+        },
+        {   "id": 3,
+            "name": "BEAUTY"
+        },
+        {   "id": 4,
+            "name": "ESSENCE OF SUMMER"
+        },
+        {   "id": 5,
+            "name": "HAIR CARE"
+        }
+    ]
+     
+}

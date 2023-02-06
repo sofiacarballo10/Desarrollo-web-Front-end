@@ -1,176 +1,174 @@
 document.addEventListener('DOMContentLoaded', function() {
-    mostrarMarcas();
-    mostrarArticulos();
-    mostrarMenu();
+    mostrarbrands();
+    showArticles();
+    showMenu();
 });
 // ------------------------------MENU----------------------------
-function mostrarMenu() {
+function showMenu() {
     try {
         fetch('./menus.json').then(function(response) {
             response.json().then(function(data) {
                 console.dir(data);
-                const barra = data.menu;
-                barra.forEach((menu) => {
-                    const { seccion } = menu;
+                const bar = data.menu;
+                bar.forEach((menu) => {
+                    const { section } = menu;
 
-                    // crear botón
-                    const nombreMenu = document.createElement('A');
-                    nombreMenu.setAttribute('href', '#');
-                    nombreMenu.textContent = seccion;
+                    // make button
+                    const nameMenu = document.createElement('A');
+                    nameMenu.setAttribute('href', '#');
+                    nameMenu.textContent = section;
 
 
                     const enlace = document.createElement('LI');
                     enlace.classList.add('font-bar');
-                    enlace.appendChild(nombreMenu)
+                    enlace.appendChild(nameMenu)
 
-                    const nombreUl = document.createElement('UL');
-                    nombreUl.classList.add('nav', 'navbar-nav', 'navbar-left');
-                    nombreUl.appendChild(enlace)
+                    const nameUl = document.createElement('UL');
+                    nameUl.classList.add('nav', 'navbar-nav', 'navbar-left');
+                    nameUl.appendChild(enlace)
 
-                    // inyectar todo en el HTML
-                    document.querySelector('#enlaces').appendChild(nombreUl);
+                    document.querySelector('#enlaces').appendChild(nameUl);
                 });
             });
         });
-    } catch (error) {
-        console.log(error);
+    } catch (wrong) {
+        console.log(wrong);
     }
 }
-//-------------------------------MARCAS---------------------------------
+//-------------------------------Brands---------------------------------
 
-function mostrarMarcas() {
+function mostrarbrands() {
     try {
-        fetch('./marcas.json').then(function(response) {
+        fetch('./brands.json').then(function(response) {
             response.json().then(function(data) {
                 console.dir(data);
-                marcas = data.marcas;
-                marcas.forEach((marca) => {
-                    const { src } = marca;
+                brands = data.brands;
+                brands.forEach((brand) => {
+                    const { src } = brand;
 
-                    // crear imagen
-                    const imagenMarca = document.createElement('IMG');
-                    imagenMarca.setAttribute('src', src);
-                    imagenMarca.classList.add('imagenMarca-style');
+                    // crear image
+                    const imagebrand = document.createElement('IMG');
+                    imagebrand.setAttribute('src', src);
+                    imagebrand.classList.add('imagebrand-style');
 
-                    // Generar DIV contenedor de la imagen
-                    const marcaDiv = document.createElement('DIV');
-                    marcaDiv.classList.add('col-lg-1', 'col-md-1', 'col-sm-3', 'col-xs-3');
-                    marcaDiv.appendChild(imagenMarca);
+                    // Generar DIV container de la image
+                    const brandDiv = document.createElement('DIV');
+                    brandDiv.classList.add('col-lg-1', 'col-md-1', 'col-sm-3', 'col-xs-3');
+                    brandDiv.appendChild(imagebrand);
 
                     // inyectar todo en el HTML
-                    document.querySelector('#marcas').appendChild(marcaDiv);
+                    document.querySelector('#brands').appendChild(brandDiv);
                 });
             });
         });
-    } catch (error) {
-        console.log(error);
+    } catch (wrong) {
+        console.log(wrong);
     }
 }
 
-//-------------------------------ARTÍCULOS-------------------------------
+//-------------------------------ARTICLES-------------------------------
 
-function mostrarArticulos() {
+function showArticles() {
     try {
-        fetch('./articulos.json').then(function(response) {
+        fetch('./articles.json').then(function(response) {
             response.json().then(function(data) {
                 console.dir(data);
-                const articulos = data.articulos;
-                articulos.forEach((articulo) => {
-                    const { nombre } = articulo;
+                const articles = data.articles;
+                articles.forEach((article) => {
+                    const { name } = article;
 
-                    // crear boton
-                    const nombreArticuloBoton = document.createElement('BUTTON');
-                    nombreArticuloBoton.setAttribute('type', 'button');
-                    nombreArticuloBoton.textContent = nombre;
-                    nombreArticuloBoton.classList.add('btn', 'btn-secondary', 'mt-5', 'col-md-2', 'btn-block', 'btn-wrap-text');
+                    // make button
+                    const nameArticleButton = document.createElement('BUTTON');
+                    nameArticleButton.setAttribute('type', 'button');
+                    nameArticleButton.textContent = name;
+                    nameArticleButton.classList.add('btn', 'btn-secondary', 'mt-5', 'col-md-2', 'btn-block', 'btn-wrap-text');
 
-                    // Generar DIV contenedor del boton
-                    const articuloDiv = document.createElement('DIV');
-                    articuloDiv.classList.add('col-md-2');
+                    // DIV Button container
+                    const articleDiv = document.createElement('DIV');
+                    articleDiv.classList.add('col-md-2');
 
-                    articuloDiv.appendChild(nombreArticuloBoton);
+                    articleDiv.appendChild(nameArticleButton);
 
-                    // inyectar todo en el HTML
-                    document.querySelector('#articulos').appendChild(articuloDiv);
+                    document.querySelector('#articles').appendChild(articleDiv);
                 });
             });
         });
-    } catch (error) {
-        console.log(error);
+    } catch (wrong) {
+        console.log(wrong);
     }
 }
-// ----------------------------VALIDAR FORMULARIO---------------------------
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input, #formulario textarea');
+// ----------------------------VALIDATE FORM---------------------------
+const form = document.getElementById('form');
+const inputs = document.querySelectorAll('#form input, #form textarea');
 
-const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    telefono: /^\d{7,14}$/, // 7 a 14 numeros
+const expresions = {
+    name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    surname: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+    mail: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    phone: /^\d{7,14}$/, // 7 a 14 numeros
 };
 
-const validarFormulario = (e) => {
+const validateForm = (e) => {
     switch (e.target.name) {
-        case 'nombre':
-            validarCampo(expresiones.nombre, e.target, 'nombre');
+        case 'name':
+            validateField(expresions.name, e.target, 'name');
             break;
-        case 'apellido':
-            validarCampo(expresiones.apellido, e.target, 'apellido');
+        case 'surname':
+            validateField(expresions.surname, e.target, 'surname');
             break;
-        case 'correo':
-            validarCampo(expresiones.correo, e.target, 'correo');
+        case 'mail':
+            validateField(expresions.mail, e.target, 'mail');
             break;
-        case 'telefono':
-            validarCampo(expresiones.telefono, e.target, 'telefono');
+        case 'phone':
+            validateField(expresions.phone, e.target, 'phone');
             break;
     }
 };
 
-const validarCampo = (expresion, input, campo) => {
+const validateField = (expresion, input, field) => {
     if (expresion.test(input.value)) {
-        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        document.getElementById(`group__${field}`).classList.remove('form__group-incorrect');
+        document.getElementById(`group__${field}`).classList.add('form__group-correct');
+        document.querySelector(`#group__${field} .form__input-wrong`).classList.remove('form__input-wrong-active');
     } else {
-        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        document.getElementById(`group__${field}`).classList.add('form__group-incorrect');
+        document.getElementById(`group__${field}`).classList.remove('form__group-correct');
+        document.querySelector(`#group__${field} .form__input-wrong`).classList.add('form__input-wrong-active');
     }
 };
 
 inputs.forEach((input) => {
-    input.addEventListener('keyup', validarFormulario);
-    input.addEventListener('blur', validarFormulario);
+    input.addEventListener('keyup', validateForm);
+    input.addEventListener('blur', validateForm);
 });
 
-formulario.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const nombre = document.querySelector('#nombre').value;
-    const apellido = document.querySelector('#apellido').value;
-    const telefono = document.querySelector('#telefono').value;
-    const correo = document.querySelector('#correo').value;
-    const mensaje = document.querySelector('#mensaje').value;
+    const name = document.querySelector('#name').value;
+    const surname = document.querySelector('#surname').value;
+    const phone = document.querySelector('#phone').value;
+    const mail = document.querySelector('#mail').value;
+    const message = document.querySelector('#message').value;
 
-    if (nombre === '' || apellido === '' || telefono === '' || correo === '' || mensaje === '') {
-        mostrarMensaje('todos los campos son obligatorios', 'error');
+    if (name === '' || surname === '' || phone === '' || mail === '' || message === '') {
+        showMessage('All fields are required', 'wrong');
 
         return;
     }
-    // crear la otra alerta de enviar formulario correctamente
-    mostrarMensaje('El mensaje fue enviado correctamente', 'mensajeValido');
+    // crear la otra alerta de send form correctamente
+    showMessage('The message was sent successfully', 'validateMesagge');
 });
 
-function mostrarMensaje(mensaje, tipoMensaje) {
+function showMessage(message, typeOfMessage) {
     const element = document.createElement('P');
-    element.textContent = mensaje;
-    element.classList.add(tipoMensaje);
+    element.textContent = message;
+    element.classList.add(typeOfMessage);
 
-    // se muestra el mensaje en el HTML
-    formulario.appendChild(element);
+    // se muestra el message en el HTML
+    form.appendChild(element);
 
-    // desaparece el error despues de 5segundos
+    // desaparece el wrong despues de 5segundos
     setTimeout(() => {
         element.remove();
     }, 5000);

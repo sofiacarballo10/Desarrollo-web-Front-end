@@ -1,35 +1,35 @@
 {
-    "marcas": [{
+    "brands": [{
             "id": 1,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 2,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 3,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 4,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 5,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 6,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 7,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         },
         {
             "id": 8,
-            "src": "img/marca.png"
+            "src": "img/brand.png"
         }
     ]
 }

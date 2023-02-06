@@ -1,22 +1,22 @@
 {
     "menu": [
         {   "id": 1,
-            "seccion": "INICIO"
+            "section": "HOME"
             
             
         },
         {   "id": 2,
-            "seccion": "TIENDAS"
+            "section": "SHOPS"
             
 
         },
         {   "id": 3,
-            "seccion": "CONOCENOS"
+            "section": "KNOW US"
            
 
         },
         {   "id": 4,
-            "seccion": "CONTACTANOS"
+            "section": "CONTACT US"
      
 
         }
